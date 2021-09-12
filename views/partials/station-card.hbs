@@ -1,0 +1,65 @@
+<div class=" ui five doublin inverted cards">
+    <a class=" ui red card">
+        <div class="ui inverted segment">
+            <h3> Station Name<i class=" right floated large map marked alternate red icon"></i></h3>
+        </div>
+        <span class="ui white text">
+        <h2>Lat: </h2>
+        <h2>Lng: </h2>
+        </span>
+    </a>
+
+    <a class=" ui red card">
+        <div class="ui inverted black segment">
+            <h3 class="header">Weather  {{latestCondition.pressure}}<i class="right floated large purple ${_station.weatherIcon}"></i></h3>
+        </div>
+        <span class="ui white text">
+        <h2>Weather Code {{latestCondition}}</h2>
+        </span>
+    </a>
+
+    <a class=" ui red card">
+        <div class="ui inverted segment">
+            <h3 class="header">Temp
+                <i class="right floated large ${_station.temperatureTrends}"></i>
+                <i class="right floated large temperature high icon"></i>
+            </h3>
+        </div> 
+        <span class="ui black text">
+        <h4>°C</h4>
+        <h4>°F</h4>
+        <h4>Min: °C</h4>
+        <h4>Max: °C</h4>
+        </span>
+    </a>
+
+    <a class=" ui red card">
+        <div class="ui inverted segment">
+            <h3 class="header">Wind
+                <i class="right floated large ${_station.windSpeedTrends}"></i>
+                <i class="right floated large wind icon"></i>
+            </h3>
+        </div>
+        <span class="ui black text">
+        <h4> latest Beaufort: </h4>
+        <h4> latest Direction: </h4>
+        <h4> Feels like: </h4>
+        <h4> Min: C</h4>
+        <h4> Max: </h4>
+        </span>
+    </a>
+
+    <a class=" ui red card">
+        <div class="ui inverted segment">
+            <h3 class="header">Pressure
+                <i class="right floated large ${_station.pressureTrends}"></i>
+                <i class="right floated large compress arrows alternate icon"></i>
+            </h3>
+        </div>
+        <span class="ui black text">
+        <h4> latest Pressure:  hPa</h4>
+        <h4> Min:  hPa</h4>
+        <h4> Max Pressure: </h4>
+        </span>
+    </a>
+</div>

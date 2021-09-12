@@ -1,0 +1,36 @@
+{{#each playlists}}
+  <section class="ui segment">
+    <h2 class="ui header">
+      {{name}}
+    </h2>
+    {{> station-card}}
+    <table class="ui table">
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Temperature</th>
+          <th>Wind Speed</th>
+          <th>Pressure</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each readings}}
+          <tr>
+            <td>
+              {{code}}
+            </td>
+            <td>
+              {{temperature}}
+            </td>
+            <td>
+              {{windSpeed}}
+            </td>
+            <td>
+              {{pressure}}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </section>
+{{/each}}
